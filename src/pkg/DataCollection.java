@@ -1,14 +1,14 @@
 package pkg;
-
+import java.io.FileNotFoundException;
+import java.util.*;
+import java.io.File;
 public class DataCollection {
 
 	public static void main(String[] args) {
-
-		System.out.println("KappaPride!!!");
-
-
-		System.out.println("Test!");
-
-	}
-
+		java.io.File file = new java.io.File("C:\\Code\\Java\\Txt.txt");
+		ArrayList<Person> customers = FileReadWrite.parse(file);
+		for(Person p : customers) {
+			System.out.println(p);
+		}
+	} 
 }
