@@ -85,9 +85,13 @@ public class Person {
 		super();
 	}
 
-	public double interestRate() {
-		double rate = 4;
-		double interest = amountOwed * (rate / 100);
+	public double getInterestRate() {
+		double interestRate = 4;
+		return interestRate;
+	}
+	
+	public double accrueMonthlyInterest() {
+		double interest = amountOwed * (getInterestRate()/100);
 		return interest;
 	}
 
