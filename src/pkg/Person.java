@@ -1,8 +1,12 @@
 package pkg;
 
 public class Person {
-	String firstName, lastName, address, roomNum, city, state, zipCode;
-	double amountOwed;
+	
+	private final double INTERESTRATE = 4;
+	private String firstName, lastName, address, roomNum, city, state, zipCode;
+	private double amountOwed;
+	
+	//Getters and Setters
 
 	public String getFirstName() {
 		return firstName;
@@ -67,7 +71,12 @@ public class Person {
 	public void setAmountOwed(double amountOwed) {
 		this.amountOwed = amountOwed;
 	}
-
+	
+	public double getInterestRate() {
+		return INTERESTRATE;
+	}
+	
+	//Constructor
 	public Person(String firstName, String lastName, String address, String roomNum, String city, String state,
 			String zipCode, double amountOwed) {
 		super();
@@ -80,19 +89,16 @@ public class Person {
 		this.zipCode = zipCode;
 		this.amountOwed = amountOwed;
 	}
-
+	//No-arg Constructor.
 	public Person() {
 		super();
 	}
-
-	public double getInterestRate() {
-		double interestRate = 4;
-		return interestRate;
-	}
+	//There's no reason to hold a variable inside this method. just go ahead and put it as a constant with our other variables.
 	
-	public double accrueMonthlyInterest() {
-		double interest = amountOwed * (getInterestRate()/100);
-		return interest;
+	//AccrueMonthly Interest shoud act as an increment on our current amount. as accrue == accumulate
+	public void accrueMonthlyInterest() {
+		//Essentially this increments our amountOwed like a credit card that wasn't paid off at the end of the month.
+		amountOwed += (amountOwed * (INTERESTRATE/100));
 	}
 
 	@Override
