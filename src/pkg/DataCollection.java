@@ -17,13 +17,13 @@ public class DataCollection {
 			p.accrueMonthlyInterest();
 			System.out.println(p);
 			
-			String fileName = ("C:\\Code\\Java\\Txt.txt");
-			FileReader reader = new FileReader("C:\\Code\\Java\\Txt.txt");
+			String fileName = ("Data-Collection/Data Letter");
+			FileReader reader = new FileReader("Data-Collection/Data Letter");
 			BufferedReader buffer = new BufferedReader(reader);
-			PrintWriter writer = new PrintWriter ("C:\\Code\\Java\\Txt.txt");
+			PrintWriter writer = new PrintWriter ("Data-Collection/Data Letter");
 			
 			while ((fileName = buffer.readLine()) !=null) {
-			writer.println ("C:\\Code\\Java\\Txt.txt");
+			writer.println (fileName);
 		}
 	} 
 }
