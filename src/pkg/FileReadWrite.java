@@ -1,5 +1,7 @@
 package pkg;
 import java.io.FileNotFoundException;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.util.*;
 public class FileReadWrite{
 	//private constructor, because java doesn't support top level static classes.
@@ -42,6 +44,18 @@ public class FileReadWrite{
 			System.exit(0);
 		}
 		return customers;
+	}
+	public static void write(ArrayList<Person> people) {
+		for(int x = 0; x  < people.size(); x++) {
+			//For each loop in this for loop create a new file, write to it, and close everything in the final block.
+			try (FileWriter writer = new FileWriter("Files\\FileName.txt")){
+				//In here you will write the logic for creating the formatted document. Research the FileWriter for more information.
+				writer.write("Klappa has not paid");
+				
+			}catch(IOException error) {
+				System.out.println("ERROR" + error);
+			}
+		}
 	}
 
 }

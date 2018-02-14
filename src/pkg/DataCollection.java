@@ -17,16 +17,16 @@ public class DataCollection {
 			p.accrueMonthlyInterest();
 			System.out.println(p);
 			
-			String fileName = ("Data-Collection/Data Letter");
+			/*String fileName = ("Data-Collection/Data Letter");
 			FileReader reader = new FileReader("Data-Collection/Data Letter");
 			BufferedReader buffer = new BufferedReader(reader);
 			PrintWriter writer = new PrintWriter ("Data-Collection/Data Letter");
 			
 			while ((fileName = buffer.readLine()) !=null) {
 			writer.println (fileName);
+			*/
 		}
+		FileReadWrite.write(customers);
 	} 
 }
 
-
-}
