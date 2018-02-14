@@ -7,8 +7,8 @@ public class FileReadWrite{
 	//private constructor, because java doesn't support top level static classes.
 	private FileReadWrite() {}
 	//Parser for FirstName|LastName|Address|Suite|City|State|ZIP|amountOwed
-	public static ArrayList<Person> parse(java.io.File file) {
-		ArrayList<Person> customers = new ArrayList<Person>();
+	public static ArrayList<Customer> parse(java.io.File file) {
+		ArrayList<Customer> customers = new ArrayList<Customer>();
 		String line;
 		//The values of the array will be initialized as the pattern for parsing state above
 		String arr[] = new String[8];
@@ -33,8 +33,7 @@ public class FileReadWrite{
 				str.delete(0,  str.length());
 				System.out.println("Finished parsing");
 				//Loading a Person object and throwing it into a arrayList that is to be returned.
-				Person person = new Person(arr[0],arr[1],arr[2],arr[3],arr[4], arr[5], arr[6],Double.parseDouble(arr[7]));
-				customers.add(person);
+				customers.add(new Customer(arr[0],arr[1],arr[2],arr[3],arr[4], arr[5], arr[6],Double.parseDouble(arr[7])));
 			}
 		}catch(FileNotFoundException error) {
 			System.out.println("The file doesn't exist|"+error);
@@ -45,7 +44,7 @@ public class FileReadWrite{
 		}
 		return customers;
 	}
-	public static void write(ArrayList<Person> people) {
+	public static void write(ArrayList<Customer> people) {
 		for(int x = 0; x  < people.size(); x++) {
 			//For each loop in this for loop create a new file, write to it, and close everything in the final block.
 			try (FileWriter writer = new FileWriter("Files\\FileName.txt")){
