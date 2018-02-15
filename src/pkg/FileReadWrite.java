@@ -7,8 +7,8 @@ public class FileReadWrite{
 	//private constructor, because java doesn't support top level static classes.
 	private FileReadWrite() {}
 	//Parser for FirstName|LastName|Address|Suite|City|State|ZIP|amountOwed
-	public static ArrayList<Customer> parse(java.io.File file) {
-		ArrayList<Customer> customers = new ArrayList<Customer>();
+	public static ArrayList<Person> parse(java.io.File file) {
+		ArrayList<Person> customers = new ArrayList<Person>();
 		String line;
 		//The values of the array will be initialized as the pattern for parsing state above
 		String arr[] = new String[8];
@@ -44,7 +44,7 @@ public class FileReadWrite{
 		}
 		return customers;
 	}
-	public static void write(ArrayList<Customer> people) {
+	public static void write(ArrayList<Person> people) {
 		for(int x = 0; x  < people.size(); x++) {
 			//For each loop in this for loop create a new file, write to it, and close everything in the final block.
 			try (FileWriter writer = new FileWriter("Files\\FileName.txt")){
