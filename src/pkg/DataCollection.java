@@ -12,7 +12,7 @@ public class DataCollection {
 
 	public static void main(String[] args) throws IOException {
 		java.io.File file = new java.io.File("C:\\Code\\Java\\Txt.txt");
-		ArrayList<Person> customers = FileReadWrite.parse(file);
+		ArrayList<Customer> customers = FileReadWrite.parse(file);
 		for(Person p : customers) {
 			//We're just casting customer here to upkeep our inheritance.
 			//Ask me about this tomorrow.
