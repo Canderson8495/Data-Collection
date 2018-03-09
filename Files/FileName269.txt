@@ -1,0 +1,17 @@
+Our Address
+
+
+FirstNameXSI LastXSI
+2923 Main Street
+Suite 103A
+City103, GA 90555
+
+					place holder date
+Dear FirstNameXSI LastXSI,
+
+	Our records shows unpaid balance of $821.8808 that is over many days old
+The balance due is now. If the balance is not fully paid in ten days 
+(by date), we will have to inform the collection agent for outstanding 
+balance plus 4.0% processing fee that increases total amount to 821.8808
+
+	If you have any question or like to discuss a payment plan, please not hesitate our office at 555-555-555

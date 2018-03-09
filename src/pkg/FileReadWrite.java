@@ -48,7 +48,7 @@ public class FileReadWrite{
 	public static void write(ArrayList<Customer> people) {
 		for(int x = 0; x  < people.size(); x++) {
 			//For each loop in this for loop create a new file, write to it, and close everything in the final block.
-			try (FileWriter writer = new FileWriter("Files\\FileName.txt")){
+			try (FileWriter writer = new FileWriter("Files\\FileName"+x+".txt")){
 				PrintWriter printWriter = new PrintWriter(writer);	
 				//In here you will write the logic for creating the formatted document. Research the FileWriter for more information.
 				printWriter.println("Our Address");
@@ -62,7 +62,7 @@ public class FileReadWrite{
 				printWriter.println("\t\t\t\t\tplace holder date");
 				printWriter.println("Dear " + people.get(x).getFirstName() +" " + people.get(x).getLastName() + ",");
 				printWriter.println();
-				printWriter.println("\tOur records shows unpaid balance of $" + people.get(x).getAmountOwed() + "that is over many days old");
+				printWriter.println("\tOur records shows unpaid balance of $" + people.get(x).getAmountOwed() + " that is over many days old");
 				printWriter.println("The balance due is now. If the balance is not fully paid in ten days \r\n" + 
 						"(by date), we will have to inform the collection agent for outstanding \r\n" + 
 						"balance plus " + people.get(x).getInterestRate() + "% processing fee that increases total amount to " + people.get(x).getAmountOwed());

@@ -1,0 +1,17 @@
+Our Address
+
+
+FirstNameCTV LastCTV
+2041 Main Street
+Suite 100C
+City101, GA 30637
+
+					place holder date
+Dear FirstNameCTV LastCTV,
+
+	Our records shows unpaid balance of $6.5207999999999995 that is over many days old
+The balance due is now. If the balance is not fully paid in ten days 
+(by date), we will have to inform the collection agent for outstanding 
+balance plus 4.0% processing fee that increases total amount to 6.5207999999999995
+
+	If you have any question or like to discuss a payment plan, please not hesitate our office at 555-555-555

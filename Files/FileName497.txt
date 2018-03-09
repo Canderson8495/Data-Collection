@@ -1,0 +1,17 @@
+Our Address
+
+
+FirstNameEDL LastEDL
+1132 Main Street
+Suite 101B
+City108, GA 44430
+
+					place holder date
+Dear FirstNameEDL LastEDL,
+
+	Our records shows unpaid balance of $965.0056 that is over many days old
+The balance due is now. If the balance is not fully paid in ten days 
+(by date), we will have to inform the collection agent for outstanding 
+balance plus 4.0% processing fee that increases total amount to 965.0056
+
+	If you have any question or like to discuss a payment plan, please not hesitate our office at 555-555-555

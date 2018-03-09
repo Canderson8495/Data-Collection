@@ -1,0 +1,17 @@
+Our Address
+
+
+FirstNameACD LastACD
+453 Main Street
+Suite 109D
+City101, GA 95648
+
+					place holder date
+Dear FirstNameACD LastACD,
+
+	Our records shows unpaid balance of $663.3536 that is over many days old
+The balance due is now. If the balance is not fully paid in ten days 
+(by date), we will have to inform the collection agent for outstanding 
+balance plus 4.0% processing fee that increases total amount to 663.3536
+
+	If you have any question or like to discuss a payment plan, please not hesitate our office at 555-555-555

@@ -1,0 +1,17 @@
+Our Address
+
+
+FirstNameEIN LastEIN
+2715 Main Street
+Suite 100C
+City101, GA 38082
+
+					place holder date
+Dear FirstNameEIN LastEIN,
+
+	Our records shows unpaid balance of $475.904 that is over many days old
+The balance due is now. If the balance is not fully paid in ten days 
+(by date), we will have to inform the collection agent for outstanding 
+balance plus 4.0% processing fee that increases total amount to 475.904
+
+	If you have any question or like to discuss a payment plan, please not hesitate our office at 555-555-555
